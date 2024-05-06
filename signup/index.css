@@ -18,3 +18,24 @@
   --completed-timeDisplay: #2A2A2A;
   --font: Poppins;
 }
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  max-height: 100vh;
+  background-color: #DCC7C4;
+  font-size: 16px;
+}
+html {
+  font-size: 16px;
+}
+* {
+  min-width: 0px;
+}
+
+#root {
+  width: 100%;
+}
