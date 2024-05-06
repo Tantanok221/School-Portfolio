@@ -2,65 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="signup.css">
-    <link rel="stylesheet" href="checkbox.css">
-    <link rel="stylesheet" href="divider.css">
-    <link rel="stylesheet" href="submit_button.css">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="Form.css" />
+    <link rel="stylesheet" href="signup.css" />
+    <link rel="stylesheet" href="checkbox.css" />
+    <link rel="stylesheet" href="divider.css" />
+    <link rel="stylesheet" href="submit_button.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <h1 class="title">Login</h1>
-            <span class="subtitle">Login To Your Account</span>
-        </div>
-
-        <button class="googleButton">
-            <h2 class="googleText">Sign Up With Google</h2>
-        </button>
-
-        <div class="divider">
-            <div class="line"></div>
-            <span class="or">OR</span>
-            <div class="line"></div>
-        </div>
-
-        <form>
-            <form name="email" class="formField">
+    <div class="mainContainer">
+        <div class="container">
+            <div class="header">
+                <h1 class="title">Sign Up</h1>
+                <span class="subtitle">Sign Up To Your Account</span>
+            </div>
+            <button class="googleButton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" viewBox="0 0 256 256">
+                    <path
+                        d="M228,128a100,100,0,1,1-22.86-63.64,12,12,0,0,1-18.51,15.28A76,76,0,1,0,203.05,140H128a12,12,0,0,1,0-24h88A12,12,0,0,1,228,128Z">
+                    </path>
+                </svg>
+                <h2 class="googleText">Sign Up With Google</h2>
+            </button>
+            <div class="divider">
+                <div class="line"></div>
+                <span class="or">OR</span>
+                <div class="line"></div>
+            </div>
+            <div name="emailForm" class="formField">
                 <div class="formLabel">Email</div>
-                <input placeholder="Enter Your Email">
-            </form>
-
-            <form name='password' class="formField">
+                <input class="input" type="email" placeholder="Enter your email: " required />
+            </div>
+            <div name="password" class="formField">
                 <div class="formLabel">Password</div>
-                <input={{ scale: 0.995 }} placeholder="Enter Your Password" id="password" onChange={(value)=>
+                <input placeholder="Enter Your Password" id="password" minlength="6" class="input" required />
+            </div>
+            <div class="checkboxContainer">
+                <input type="checkbox" class="checkbox"></input>
+                <div class="checkboxLabel">Show Password</div>
+            </div>
+            <button class="formButton">
+                Login
+            </button>
+        </div>
     </div>
 
-    <div class="formMessage">
-        Invalid Password or Email
-    </div>
-    </form>
-
-    <input type="checkbox">
-    <div class="checkbox">
-    </div>
-    <label class="checkboxLabel">Show Password</label>
-    </input>
-
-    <input type="submit" class="formButton">
-    </input>
-
-    <div class="FooterContainer">
-        <div class="FooterText">Don't Have An Account? </div>
-        <a class="FooterHighlight">Register</a>
-    </div>
-
-    </Form.Root>
-
-    </div>
 </body>
 
 </html>
