@@ -22,12 +22,14 @@
 body {
   margin: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
   min-width: 320px;
+  flex-direction: column;
   max-height: 100vh;
-  background-color: #DCC7C4;
+  background-color: #212224;
   font-size: 16px;
+  display: flex;
+  gap: 1rem;
 }
 html {
   font-size: 16px;
