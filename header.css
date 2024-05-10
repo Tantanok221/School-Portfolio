@@ -1,0 +1,37 @@
+.headerLink-Active {
+  color: #FFCE82;
+  border-bottom: 0.15rem solid #FFCE82;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header {
+  background-color: #212224;
+  color: #FFFFFF;
+  padding-top: 19px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.headerLink {
+  cursor: pointer;
+
+}
+
+header .topheader {
+  
+  font-family: Noto Sans;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.headerLink:hover {
+  color: #FFCE82
+}
