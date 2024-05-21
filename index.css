@@ -4,7 +4,7 @@ html {
   padding: 0px;
   margin: 0px;
   scroll-behavior: smooth;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 * {
