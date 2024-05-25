@@ -23,7 +23,7 @@ html {
     margin-bottom: 50px;
 }
 
-button {
+.button {
     height: -moz-fit-content;
   height: fit-content;
   font-size: 1.25rem;
