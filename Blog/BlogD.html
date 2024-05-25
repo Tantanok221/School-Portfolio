@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Tips and Tricks</title>
+    <link rel="stylesheet" href="BlogA.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-container">
+        <img src="image/Blog D-1.jpg" id="container-img">
+        <div class="text-container">
+            <div class="title">
+                <h2>CSS Flexbox Tips and Tricks</h2>
+            </div>
+            <div class="subtitle">CSS Flexbox allows you to easily format your HTML like you never knew was possible.
+                With Flexbox you can align vertically and horizontally, easily. Like the sound of that? Yeah, so do I.
+            </div>
+            <div class="container-maintext">
+                Flexbox is also super useful when you're creating the general layout of your website or app. It is easy
+                to learn, well-supported (in all modern browsers) and is great to work with – not to mention it doesn’t
+                take long to get the basics.
+
+                So let's dive right in and learn more.
+            </div>
+            <div class="subtitle">Flexbox</div>
+            <div class="container-maintext">
+                Here is a list of the Flexbox properties that can be used to position elements in CSS:
+            </div>
+            <div class="subtitle">CSS that can be applied to a container</div>
+            <code>
+                display: flexbox | inline-flex;
+                flex-direction: row | row-reverse | column | column-reverse;
+                flex-wrap: nowrap | wrap | wrap-reverse;
+                flex-flow: <'flex-direction'> || <'flex-wrap'>
+                justify-content: flex-start | flex-end | center | space-between | space-around;
+                align-items: flex-start | flex-end | center | baseline | stretch;
+                align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+            </code>
+            <div class="subtitle">CSS that can be applied to items/elements in a container</div>
+            <code>
+                order: <integer>;
+                    flex-grow: <number>; /* default 0 */
+                    flex-shrink: <number>; /* default 1 */
+                    flex-basis: <length> | auto; /* default auto */
+                    flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+                    align-self: auto | flex-start | flex-end | center | baseline | stretch;
+            </code>
+            <div class="container-maintext">
+                So now you have your toolkit. But you might ask “What do I do with my tools, and how do I use them?”
+                Well, let me show you.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
