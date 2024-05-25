@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="panels">
+      <div class="panel">
+        <h1>Moose Code Translation</h1>
+        <textarea rows="4" placeholder="Enter English" id="input">
+          MorseCode</textarea
+          >
+          <div class="symbol">⇵</div>
+          <textarea rows="4" placeholder="Enter MorseCode" id="output"></textarea>
+          <div class="playlist"></div>
+          <div class="buttons">
+            <button class="blue" id="btnMorse">Translate</button>
+            <button class="yellow" id="btnEng">Translate Back</button>
+          </div>
+          
+        </div>
+        <div class="panel yellow">
+          <h3>Translation List</h3>
+          <hr />
+          <ul id="Morselist"></ul>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.6/velocity.min.js"  crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"  crossorigin="anonymous"></script>
+      <script src="index.js"></script>
+    </body>
+    </html>
+    

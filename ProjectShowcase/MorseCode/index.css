@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&display=swap");
+* {
+  font-family: "Noto Sans SC", san-serif; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #DCC7C4;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.panels {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+  transition: 0.5s; }
+  .panels:hover {
+    transform: translateY(-50px);
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.3); }
+  .panels .panel {
+    flex: 5;
+    padding: 32px; }
+    .panels .panel textarea {
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 16px;
+      font-weight: 400;
+      color: #000;
+      padding: 10px;
+      outline: none;
+      border: solid 3px rgba(0, 0, 0, 0.3);
+      letter-spacing: 1px; }
+      .panels .panel textarea:focus {
+        border: solid 3px #FFB637; }
+    .panels .panel h3, .panels .panel h1 {
+      margin: 0;
+      text-align: center;
+      color: #f46969; }
+    .panels .panel h3 {
+      font-weight: 400;
+      margin-bottom: 6px;
+      font-size: 24px; }
+    .panels .panel h1 {
+      font-weight: 500;
+      margin-bottom: 16px;
+      font-size: 32px; }
+    .panels .panel .symbol {
+      font-weight: 700;
+      text-align: center;
+      color: #f46969;
+      font-size: 24px; }
+    .panels .panel.yellow {
+      flex: 4;
+      background-color: #f46969;
+      border-radius: 0px 8px 8px 0px; }
+      .panels .panel.yellow h3 {
+        color: #f9f9f9;
+        font-weight: 700;
+        font-size: 28px; }
+    .panels .panel hr {
+      border: none;
+      border-bottom: solid 4px #FFB637; }
+    .panels .panel .buttons {
+      display: flex;
+      justify-content: space-between; }
+      .panels .panel .buttons button {
+        padding: 12px 24px;
+        cursor: pointer;
+        font-size: 16px; }
+      .panels .panel .buttons .white {
+        background-color: transparent;
+        padding: 10px 24px;
+        border: solid 2px rgba(0, 0, 0, 0.2); }
+
+.blue {
+  background-color: #f46969;
+  color: white;
+  border: none; }
+
+.yellow {
+  background-color: #FFB637;
+  border: none; }
+
+#Morselist {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 32px; }
+  #Morselist li {
+    margin-bottom: 5px;
+    font-size: 18px;
+    width: 30%;
+    color: #252525; }
+
+.playlist {
+  height: 40px;
+  text-align: center; }
+
+.playing {
+  color: #FFB637; }
