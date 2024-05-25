@@ -1,0 +1,134 @@
+html {
+  background: #212224;
+}
+
+
+form {
+  color: #ffffff;
+  background-color: #212224;
+  padding-top: 68px;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  gap: 173px;
+  z-index: 2;
+  padding-bottom: 100px;
+}
+form label {
+  position: relative;
+  z-index: 3;
+}
+form h1 {
+  font-size: 3rem;
+  font-family: Noto sans;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  z-index: 3;
+}
+form ::-moz-placeholder {
+  color: #8E8E8E;
+  font-family: Karla;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  z-index: 3;
+}
+form .caption, form ::placeholder {
+  color: #8E8E8E;
+  font-family: Karla;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  z-index: 3;
+}
+form ::-moz-placeholder {
+  padding-left: 16px;
+}
+form ::placeholder {
+  padding-left: 16px;
+}
+form .caption2 {
+  padding-bottom: 18px;
+}
+form .smallbox {
+  padding-top: 32px;
+}
+form .leftbox p {
+  position: relative;
+  z-index: 3;
+  padding-top: 4px;
+}
+form .rightbox {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+form .rightbox p {
+  position: relative;
+  z-index: 3;
+  font-family: Noto Sans;
+  font-size: 24px;
+  font-weight: 500;
+  padding-bottom: 29px;
+}
+form .rightbox input, form .rightbox textarea {
+  background-color: #2E2F30;
+  position: relative;
+  z-index: 3;
+  border-width: 0px;
+  height: 43px;
+}
+form .rightbox input[type=text], form .rightbox textarea[type=text] {
+  color: #ffffff;
+  text-align: left;
+}
+form .rightbox textarea::-moz-placeholder {
+  padding-top: 16px;
+}
+form .rightbox textarea::placeholder {
+  padding-top: 16px;
+}
+form .rightbox .upperbox {
+  display: flex;
+  flex-direction: row;
+  gap: 75px;
+}
+form .rightbox .upperbox .namebox, form .rightbox .upperbox .emailbox {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 227px;
+}
+form .rightbox .bigbox {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 3;
+}
+form .rightbox .bigbox label {
+  padding-bottom: 12px;
+}
+form .rightbox .bigbox textarea {
+  height: 234px;
+}
+form .rightbox .contact {
+  border: 3px solid #FFCE82;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #FFCE82;
+  background: #101112;
+  padding: 12px 32px;
+  border-radius: 4px;
+  margin-bottom: 100px;
+  position: relative;
+  z-index: 3;
+}/*# sourceMappingURL=portfolio.css.map */

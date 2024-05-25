@@ -13,6 +13,9 @@ html {
     overflow-x: hidden;
 }
 
+.footerfix {
+    margin: 0 10%;
+}
 .main-container {
     padding-top: 150px;
     width: 100%;

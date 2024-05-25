@@ -1,20 +1,17 @@
-body,
-html {
-    margin: 0px;
-    padding: 0px;
-    font-family: Karla;
-    font-size: 16px;
-    scroll-behavior: smooth;
-}
 
 .footer-main-container {
-    display: flex;
+    scroll-behavior: smooth;
+    font-family: Karla;
+    font-size: 16px;
     background-color: #212224;
     color: #FFFFFF;
-    margin: 2rem 12rem;
-    padding: 2rem;
+    padding-top: 2rem;
     flex-direction: row;
     gap: 3rem;
+    display: flex;
+
+    align-content: space-between;
+    justify-content: space-between;
 }
 
 .project-container {

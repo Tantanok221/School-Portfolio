@@ -23,7 +23,8 @@ header {
 }
 
 .topheader {
-  
+  background-color: #212224;
+  padding-top: 2%;
   font-family: Noto Sans;
   font-size: 1.5rem;
   display: flex;
