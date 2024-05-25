@@ -36,8 +36,7 @@ html {
     flex-direction: column;
     justify-content: center;
 }
-
-#container-img {
+.container-img {
     padding-top: 100px;
     width: 60%;
 }
@@ -46,7 +45,7 @@ html {
     font-family: Poppins;
     font-size: 1.5rem;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 600;
     width: 60%;
     margin: 2rem 0;
 }
