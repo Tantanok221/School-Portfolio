@@ -55,9 +55,6 @@ header .mediumtext {
   display: flex;
   flex-direction: row;
 }
-header .intro {
-  flex: 1;
-}
 header .headerRight {
   flex: 1;
   height: 500px;
@@ -73,6 +70,7 @@ header .intro2 {
   padding-top: 28px;
   padding-bottom: 22px;
   font-weight: 300;
+  width: 100%;
 }
 header .intro2 b {
   color: #FFCE82;
@@ -273,7 +271,7 @@ header .intro4 .introsvg {
   bottom: 120px;
   right: 240px;
   z-index: 3;
-  width: 223px;
+  width: 100%;
   line-height: normal;
   font-weight: 500;
 }
