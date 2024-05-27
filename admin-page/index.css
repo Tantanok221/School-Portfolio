@@ -24,7 +24,6 @@ img {
 h1 {
     margin: 0;
     padding: 0;
-    padding-bottom: 2rem;
 }
 
 .main-container {
@@ -35,6 +34,7 @@ h1 {
     width: 100%;
     height: 100%;
     margin: 7rem 6rem;
+    gap: 2.5rem;
 }
 
 .container {
@@ -116,3 +116,4 @@ h1 {
     background-color: #E86F5E;
     color: #212224;
 }
+
