@@ -13,32 +13,29 @@ html {
     overflow-x: hidden;
 }
 
+
 .main-container {
-    padding-top: 150px;
-    width: 100%;
-    height: 100%;
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10%;
+    padding-bottom: 10rem;
+    gap: 2rem;
+}
+
+.upper-container {
     display: flex;
     flex-direction: row;
-    margin: 0 10%;
-    padding-bottom: 250px;
+    justify-content: center;
+    width: auto;
+    gap: 8rem;
 }
 
-.right-container {
-    width: 100%;
+.lower-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-}
-
-.left-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.container-img {
-    padding-top: 100px;
-    width: 60%;
+    gap: 8rem;
 }
 
 .main-container p {
@@ -46,10 +43,24 @@ html {
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 600;
-    width: 60%;
     margin: 2rem 0;
 }
 
-.footerfix {
-    margin: 0 10%;
+
+.container-img img {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-container a {
+    width: 100%;
+}
+
+.lower-container a {
+    width: 100%;
 }
