@@ -11,7 +11,10 @@ html {
   font-family: karla;
 }
 
-body, h1, footer, p {
+body,
+h1,
+footer,
+p {
   margin: 0px;
   padding: 0px;
 }
@@ -31,6 +34,7 @@ b {
     display: none;
   }
 }
+
 header {
   background-color: #212224;
   color: #FFFFFF;
@@ -38,6 +42,7 @@ header {
   padding-left: 10%;
   padding-right: 10%;
 }
+
 header .topheader {
   font-family: Noto Sans;
   font-size: 1.5rem;
@@ -47,24 +52,29 @@ header .topheader {
   height: -moz-fit-content;
   height: fit-content;
 }
+
 header .home {
   color: #FFCE82;
   border-bottom: 0.15rem solid #FFCE82;
 }
+
 header .mediumtext {
   display: flex;
   flex-direction: row;
 }
+
 header .headerRight {
   flex: 1;
   height: 500px;
   padding-top: 40px;
 }
+
 header .intro1 {
   font-size: 1.5rem;
   padding-top: 80px;
   font-weight: 400;
 }
+
 header .intro2 {
   font-size: 4rem;
   padding-top: 28px;
@@ -72,9 +82,11 @@ header .intro2 {
   font-weight: 300;
   width: 100%;
 }
+
 header .intro2 b {
   color: #FFCE82;
 }
+
 header .intro3 {
   font-size: 1.5rem;
   font-style: normal;
@@ -83,9 +95,11 @@ header .intro3 {
   width: 588px;
   padding-bottom: 36px;
 }
+
 header .intro3 b {
   color: #FFCE82;
 }
+
 header .intro4 {
   display: flex;
   gap: 10px;
@@ -101,6 +115,7 @@ header .intro4 {
   background: #101112;
   border-radius: 4px;
 }
+
 header .intro4 .introsvg {
   width: 28px;
   height: 28px;
@@ -116,6 +131,7 @@ header .intro4 .introsvg {
   padding-bottom: 105px;
   gap: 64px;
 }
+
 .bodyPage b {
   color: #ffc263;
   font-style: normal;
@@ -123,6 +139,7 @@ header .intro4 .introsvg {
   line-height: 144.9%;
   font-size: 2rem;
 }
+
 .bodyPage .title {
   margin-top: 198px;
   margin-bottom: 120px;
@@ -134,11 +151,13 @@ header .intro4 .introsvg {
   background-color: #101112;
   z-index: 2;
 }
+
 .bodyPage .line {
   position: absolute;
   padding-top: 43px;
   z-index: 1;
 }
+
 .bodyPage .boxleft {
   display: flex;
   flex-direction: column;
@@ -152,6 +171,7 @@ header .intro4 .introsvg {
   z-index: 2;
   font-size: 1rem;
 }
+
 .boxleft p {
   font-size: 1rem;
 }
@@ -195,18 +215,22 @@ header .intro4 .introsvg {
   padding-left: 10%;
   padding-right: 10%;
 }
+
 @media (max-width: 1300px) {
   .projectPage {
     padding-left: 5%;
     padding-right: 5%;
   }
+
   .projectPage .boxleft .caseBox .caseStudy {
     transform: translateX(-50%);
   }
+
   .projectPage .boxright .caseBox .caseStudy {
     transform: translateX(50%);
   }
 }
+
 .projectPage .title {
   font-size: 2rem;
   font-style: normal;
@@ -215,12 +239,15 @@ header .intro4 .introsvg {
   z-index: 2;
   background-color: #212224;
 }
+
 .projectPage b {
   color: #FFCE82;
 }
+
 .projectPage img {
   height: 270px;
 }
+
 .projectPage .boxleft {
   display: flex;
   font-size: 2.25rem;
@@ -228,13 +255,16 @@ header .intro4 .introsvg {
   justify-content: center;
   align-items: center;
 }
+
 .projectPage .boxleft .text {
   width: 235px;
 }
+
 .projectPage .boxleft .casebox {
   z-index: 2;
   height: 270px;
 }
+
 .projectPage .boxleft .caseStudy {
   font-size: 1.25rem;
   height: 46px;
@@ -248,6 +278,7 @@ header .intro4 .introsvg {
   line-height: normal;
   font-weight: 500;
 }
+
 .projectPage .boxright {
   display: flex;
   font-size: 2.25rem;
@@ -255,13 +286,16 @@ header .intro4 .introsvg {
   justify-content: center;
   align-items: center;
 }
+
 .projectPage .boxright .text {
   width: 235px;
 }
+
 .projectPage .boxright .casebox {
   z-index: 2;
   height: 270px;
 }
+
 .projectPage .boxright .caseStudy {
   font-size: 1.25rem;
   height: 46px;
@@ -284,6 +318,7 @@ header .intro4 .introsvg {
   align-content: center;
   justify-content: center;
 }
+
 .casePage .button {
   height: -moz-fit-content;
   height: fit-content;
@@ -297,6 +332,7 @@ header .intro4 .introsvg {
   margin-top: 150px;
   font-family: Karla;
   font-weight: 700;
+  transition: transform 0.3s ease-in-out;
 }
 
 .diamond {
@@ -318,10 +354,12 @@ footer {
   z-index: 2;
   padding-bottom: 100px;
 }
+
 footer label {
   position: relative;
   z-index: 3;
 }
+
 footer h1 {
   font-size: 3rem;
   font-family: Noto sans;
@@ -330,6 +368,7 @@ footer h1 {
   position: relative;
   z-index: 3;
 }
+
 footer ::-moz-placeholder {
   color: #8E8E8E;
   font-family: Karla;
@@ -340,7 +379,9 @@ footer ::-moz-placeholder {
   position: relative;
   z-index: 3;
 }
-footer .caption, footer ::placeholder {
+
+footer .caption,
+footer ::placeholder {
   color: #8E8E8E;
   font-family: Karla;
   font-size: 1rem;
@@ -350,28 +391,35 @@ footer .caption, footer ::placeholder {
   position: relative;
   z-index: 3;
 }
+
 footer ::-moz-placeholder {
   padding-left: 16px;
 }
+
 footer ::placeholder {
   padding-left: 16px;
 }
+
 footer .caption2 {
   padding-bottom: 18px;
 }
+
 footer .smallbox {
   padding-top: 32px;
 }
+
 footer .leftbox p {
   position: relative;
   z-index: 3;
   padding-top: 4px;
 }
+
 footer .rightbox {
   display: flex;
   flex-direction: column;
   gap: 34px;
 }
+
 footer .rightbox p {
   position: relative;
   z-index: 3;
@@ -380,46 +428,59 @@ footer .rightbox p {
   font-weight: 500;
   padding-bottom: 29px;
 }
-footer .rightbox input, footer .rightbox textarea {
+
+footer .rightbox input,
+footer .rightbox textarea {
   background-color: #2E2F30;
   position: relative;
   z-index: 3;
   border-width: 0px;
   height: 43px;
 }
-footer .rightbox input[type=text], footer .rightbox textarea[type=text] {
+
+footer .rightbox input[type=text],
+footer .rightbox textarea[type=text] {
   color: #ffffff;
   text-align: left;
 }
+
 footer .rightbox textarea::-moz-placeholder {
   padding-top: 16px;
 }
+
 footer .rightbox textarea::placeholder {
   padding-top: 16px;
 }
+
 footer .rightbox .upperbox {
   display: flex;
   flex-direction: row;
   gap: 75px;
 }
-footer .rightbox .upperbox .namebox, footer .rightbox .upperbox .emailbox {
+
+footer .rightbox .upperbox .namebox,
+footer .rightbox .upperbox .emailbox {
   display: flex;
   flex-direction: column;
   gap: 12px;
   width: 227px;
 }
+
 footer .rightbox .bigbox {
   display: flex;
   flex-direction: column;
   position: relative;
   z-index: 3;
 }
+
 footer .rightbox .bigbox label {
   padding-bottom: 12px;
 }
+
 footer .rightbox .bigbox textarea {
   height: 234px;
 }
+
 footer .rightbox .contact {
   border: 3px solid #FFCE82;
   width: -moz-fit-content;
@@ -435,4 +496,19 @@ footer .rightbox .contact {
   margin-bottom: 100px;
   position: relative;
   z-index: 3;
-}/*# sourceMappingURL=portfolio.css.map */
+}
+
+.casePage .button:hover{
+  background-color: #FFCE82;
+  color: #101112;
+  transform: scale(1.1);
+}
+
+.casePage a:hover {
+  color: inherit;
+}
+
+.casePage a{
+  color: inherit;
+}
+/*# sourceMappingURL=portfolio.css.map */
