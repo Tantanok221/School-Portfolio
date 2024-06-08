@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,114 +15,138 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
     <link rel="stylesheet" href="../login/index.css" />
     <link rel="stylesheet" href="../login/Form.css" />
     <link rel="stylesheet" href="../login/signup.css" />
     <link rel="stylesheet" href="../login/checkbox.css" />
     <link rel="stylesheet" href="../login/divider.css" />
     <link rel="stylesheet" href="../login/submit_button.css" />
-    <link rel="stylesheet" href="../header.css">
-    <link rel="stylesheet" href="../footer.css">
-</head>
+    <link rel="stylesheet" href="../header.css" />
+    <link rel="stylesheet" href="../footer.css" />
+  </head>
 
-<body>
-  <nav class="topheader">
-    <a class="headerLink" href="../index.html">Home</a>
-    <a class="headerLink" href="../our-blog/our-blog.html">Our Blog</a>
-    <a class="headerLink" href="../our-project/our-project.html">Project</a>
-    <a href="../contact/contact.html" class="headerLink">Contact</a>
-  </nav>
-  
+  <body>
+    <nav class="topheader">
+      <a class="headerLink" href="../index.html">Home</a>
+      <a class="headerLink" href="../our-blog/our-blog.html">Our Blog</a>
+      <a class="headerLink" href="../our-project/our-project.html">Project</a>
+      <a href="../contact/contact.html" class="headerLink">Contact</a>
+    </nav>
+
     <div class="mainContainer">
-        <div class="container">
-            <div class="header">
-                <h1 class="title">Sign Up</h1>
-                <span class="subtitle">Sign Up To Your Account</span>
-            </div>
-            <button class="googleButton">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" viewBox="0 0 256 256">
-                    <path
-                        d="M228,128a100,100,0,1,1-22.86-63.64,12,12,0,0,1-18.51,15.28A76,76,0,1,0,203.05,140H128a12,12,0,0,1,0-24h88A12,12,0,0,1,228,128Z">
-                    </path>
-                </svg>
-                <h2 class="googleText">Sign Up With Google</h2>
-            </button>
-            <div class="divider">
-                <div class="line"></div>
-                <span class="or">OR</span>
-                <div class="line"></div>
-            </div>
-            <div name="emailForm" class="formField">
-                <div class="formLabel">Email</div>
-                <input class="input" type="email" placeholder="Enter your email: " required />
-            </div>
-            <div name="password" class="formField">
-                <div class="formLabel">Password</div>
-                <input placeholder="Enter Your Password" type="password" id="password" minlength="6" class="input" required />
-            </div>
-            <div class="checkboxContainer">
-                <input id="checkbox" type="checkbox" class="checkbox">
-                <div class="checkboxLabel">Show Password</div>
-            </div>
-            <button class="formButton">
-                Signup
-            </button>
-            <div class="FooterContainer">
-                <div class="FooterText">Already Have An Account? </div>
-                <a href="../login/login.html" class="FooterHighlight">Login</a>
-              </div>
+      <div class="container">
+        <div class="header">
+          <h1 class="title">Sign Up</h1>
+          <span class="subtitle">Sign Up To Your Account</span>
         </div>
+        <button class="googleButton">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="#fff"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M228,128a100,100,0,1,1-22.86-63.64,12,12,0,0,1-18.51,15.28A76,76,0,1,0,203.05,140H128a12,12,0,0,1,0-24h88A12,12,0,0,1,228,128Z"
+            ></path>
+          </svg>
+          <h2 class="googleText">Sign Up With Google</h2>
+        </button>
+        <div class="divider">
+          <div class="line"></div>
+          <span class="or">OR</span>
+          <div class="line"></div>
+        </div>
+        <div name="emailForm" class="formField">
+          <div class="formLabel">Email</div>
+          <input
+            class="input"
+            type="email"
+            placeholder="Enter your email: "
+            required
+          />
+        </div>
+        <div name="password" class="formField">
+          <div class="formLabel">Password</div>
+          <input
+            placeholder="Enter Your Password"
+            type="password"
+            id="password"
+            minlength="6"
+            class="input"
+            required
+          />
+        </div>
+        <div class="checkboxContainer">
+          <input id="checkbox" type="checkbox" class="checkbox" />
+          <div class="checkboxLabel">Show Password</div>
+        </div>
+        <button class="formButton">Signup</button>
+        <div class="FooterContainer">
+          <div class="FooterText">Already Have An Account?</div>
+          <a href="../login/login.html" class="FooterHighlight">Login</a>
+        </div>
+      </div>
     </div>
-    <script src="./signup.js" ></script>
+    <script src="./signup.js"></script>
     <footer>
-        <div class="footer-main-container">
-          <div class="project-container">
-            Project Page
-            <div class="project-inner-container">
-              <a href="../ProjectPage/ProjectB.html">Counter</a>
-              <a href="../ProjectPage/ProjectC.html">KawaiiMonster</a>
-              <a href="../ProjectPage/ProjectD.html">MorseCode</a>
-              <a href="../ProjectPage/ProjectE.html">NameCard</a>
-            </div>
-          </div>
-          <div class="project-container">
-            Project Showcase
-            <div class="project-inner-container">
-              <a href="../ProjectShowcase/Counter/index.html">Counter</a>
-              <a href="../ProjectShowcase/KawaiiMonster/index.html">KawaiiMonster</a>
-              <a href="../ProjectShowcase/MorseCode/index.html">MorseCode</a>
-              <a href="../ProjectShowcase/NameCard/index.html">NameCard</a>
-            </div>
-          </div>
-          <div class="blog-container">
-            Blog
-            <div class="blog-inner-container">
-              <a href="../Blog/BlogB.html">How to design a modern website</a>
-              <a href="../Blog/BlogC.html">Figma vs Sketch: Why 10 Design Agencies Switched from Sketch to Figma</a>
-              <a href="../Blog/BlogD.html">CSS Flexbox Tips and Tricks</a>
-              <a href="../Blog/BlogE.html">An Introduction to Sass and SCSS</a>
-            </div>
-          </div>
-          <div class="resources-container">
-            Resources
-            <div class="resources-inner-container">
-              <a href="../contact/contact.html">Contact Us</a>
-              <a href="../our-team/our-team.html">Our Team</a>
-              <a href="../our-blog/our-blog.html">Our Blog</a>
-            </div>
-          </div>
-          <div class="admin-container">
-            Admin
-            <div class="admin-inner-container">
-              <a href="../login/login.html">Login</a>
-              <a href="../signup/signup.html">Sign Up</a>
-              <a href="../admin-page/index.html">Admin Page</a>
-            </div>
+      <div class="footer-main-container">
+        <div class="project-container">
+          Project Page
+          <div class="project-inner-container">
+            <a href="../ProjectPage/ProjectB.html">Counter</a>
+            <a href="../ProjectPage/ProjectC.html">KawaiiMonster</a>
+            <a href="../ProjectPage/ProjectD.html">MorseCode</a>
+            <a href="../ProjectPage/ProjectE.html">NameCard</a>
+            <a href="../ProjectPage/ProjectF.thml">Log-In Form</a>
           </div>
         </div>
-    
-      </footer>
-</body>
-
+        <div class="project-container">
+          Project Showcase
+          <div class="project-inner-container">
+            <a href="../ProjectShowcase/Counter/index.html">Counter</a>
+            <a href="../ProjectShowcase/KawaiiMonster/index.html">
+              KawaiiMonster
+            </a>
+            <a href="../ProjectShowcase/MorseCode/index.html">MorseCode</a>
+            <a href="../ProjectShowcase/NameCard/index.html">NameCard</a>
+            <a href="../ProjectShowcase/log-in-form/index.html">log-in Form</a>
+          </div>
+        </div>
+        <div class="blog-container">
+          Blog
+          <div class="blog-inner-container">
+            <a href="../Blog/BlogB.html">How to design a modern website</a>
+            <a href="../Blog/BlogC.html">
+              Figma vs Sketch: Why 10 Design Agencies Switched from Sketch to
+              Figma
+            </a>
+            <a href="../Blog/BlogD.html">CSS Flexbox Tips and Tricks</a>
+            <a href="../Blog/BlogE.html">An Introduction to Sass and SCSS</a>
+          </div>
+        </div>
+        <div class="resources-container">
+          Resources
+          <div class="resources-inner-container">
+            <a href="../contact/contact.html">Contact Us</a>
+            <a href="../our-team/our-team.html">Our Team</a>
+            <a href="../our-blog/our-blog.html">Our Blog</a>
+          </div>
+        </div>
+        <div class="admin-container">
+          Admin
+          <div class="admin-inner-container">
+            <a href="../login/login.html">Login</a>
+            <a href="../signup/signup.html">Sign Up</a>
+            <a href="../admin-page/index.html">Admin Page</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -1,195 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>An Introduction to Sass and SCSS</title>
-    <link rel="stylesheet" href="BlogA.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
-        rel="stylesheet">
-        <link rel="stylesheet" href="../header.css">
-        <link rel="stylesheet" href="../footer.css">
-</head>
+    <link rel="stylesheet" href="BlogA.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../header.css" />
+    <link rel="stylesheet" href="../footer.css" />
+  </head>
 
-<body>
-  <nav class="topheader">
-    <a class="headerLink" href="../index.html">Home</a>
-    <a class="headerLink" href="../our-blog/our-blog.html">Our Blog</a>
-    <a class="headerLink" href="../our-project/our-project.html">Project</a>
-    <a href="../contact/contact.html" class="headerLink">Contact</a>
-  </nav>
+  <body>
+    <nav class="topheader">
+      <a class="headerLink" href="../index.html">Home</a>
+      <a class="headerLink" href="../our-blog/our-blog.html">Our Blog</a>
+      <a class="headerLink" href="../our-project/our-project.html">Project</a>
+      <a href="../contact/contact.html" class="headerLink">Contact</a>
+    </nav>
     <div class="main-container">
-        <div class="text-container">
-            <div class="title">
-                <h2>An Introduction to Sass and SCSS</h2>
-            </div>
-            <div class="subtitle">Learn the basics of Sass in just a few minutes</div>
-            <img src="image/Blog E-1.webp" id="container-img">
-            <div class="container-maintext">
-                In today’s fast-moving world, knowing Sass is an important part of web development. Today, almost all
-                large projects use some sort of preprocessor like Sass, Less, Stylus, etc.
-
-                Sass is the most popular and easy to use. If you learn Sass, it’s very easy to learn other
-                preprocessors.
-            </div>
-            <div class="subtitle">What Is Sass?</div>
-            <div class="container-maintext">
-                It stands for Syntantically Awesome Stylesheets. It’s a CSS preprocessor.
-
-                It allows us to create variables, nested rules, mixins, functions, and do mathematical calculations,
-                allowing us to write next-generation CSS today. It allows us to easily manage large CSS files and split
-                them across different files.
-
-                Every CSS file is a Sass file. so you can take your .css file contents and put it in a Sass file and it
-                will work just fine.
-
-                There are two types of syntaxes while writing CSS in Sass.
-
-                1. SASS: Files with the .sass extension allows us to write CSS without semicolons and without curly
-                brackets with an added indentation for CSS properties.
-            </div>
-            <img src="image/Blog E-2.webp" id="container-img">
-            <div class="container-maintext">
-                2. SCSS: Files with the .scss extension is the CSS we normally write, where each CSS declaration ends
-                with
-                a semicolon and each selector is written in curly brackets.
-            </div>
-            <img src="image/Blog E-3.webp" id="container-img">
-            <div class="container-maintext">
-                The choice is up to you as to which syntax to use. We will be using the SCSS syntax.
-
-                The great thing about Sass is that we write code in a .scss file and it will be converted to a CSS file
-                using a tool we will explore later in this article. So, in the end, the browser will render only CSS
-                files.
-
-                Let’s understand what Sass provides.
-            </div>
-            <div class="subtitle">Variables</div>
-            <div class="container-maintext">
-                Sass allows us to declare variables. This is one of the areas where Sass shines because we can create
-                variables for different colors or font sizes and use that variable in any file.
-
-                So, if we want to change the color of any part of the page later, we don’t need to make changes in all
-                places where the color is used. We just change the color in the variable and the change will be
-                reflected in all the places where that color is used.
-
-                To declare a variable in Sass, we start the variable name with a dollar sign.
-            </div>
-            <code>
-                $background-color: #ff0000;<br/>
-                $sm-font-size: 16px;<br/>
-                $lg-font-size: 20px;<br/>
-            </code>
-            <div class="subtitle">Comments</div>
-            <div class="container-maintext">
-                Sass provides two ways of writing comments.
-
-                1. Single-line comment: double slashes //.
-                2.Multi-line comment: /* */.
-
-                Note: Single-line comments will not be added to the final compiled CSS file. Only multi-line comments
-                will be added to the final CSS. So, if you need to see the comments in a CSS file, you need to write it
-                using the /* */ syntax
-            </div>
-            <div class="subtitle">Nesting</div>
-            <div class="container-maintext">
-                If you have CSS like below:
-            </div>
-            <code>
-                footer {<br/>
-                    background-color: #777;<br/>
-                   }<br/>
-                   footer ul {<br/>
-                    list-style: none;<br/>
-                   }<br/>
-                   footer li {<br/>
-                    float: left;<br/>
-                   }<br/>
-                   footer li a {<br/>
-                    padding: 5px;<br/>
-                    color: #4e4f48;<br/>
-                    font-size: 16px;<br/>
-                    text-decoration: none;<br/>
-                   }<br/>
-            </code>
-            <div class="container-maintext">
-                We can write it using nesting like this:
-            </div>
-            <code>
-                footer {<br/>
-                    background-color: #777;<br/>
-                    ul {<br/>
-                     list-style: none;<br/>
-                    }<br/>
-                    li {<br/>
-                     float: left;<br/>
-                     a {<br/>
-                       padding: 5px;<br/>
-                       color: #4e4f48;<br/>
-                       font-size: 16px;<br/>
-                       text-decoration: none;<br/>
-                     }<br/>
-                    }<br/>
-                   }<br/>
-            </code>
-            <div class="container-maintext">
-                So, as shown in the above CSS, nesting allows us to group together related code, which is easy to modify
-                and maintain and also saves us from typing extra characters.
-            </div>
-
+      <div class="text-container">
+        <div class="title">
+          <h2>An Introduction to Sass and SCSS</h2>
         </div>
+        <div class="subtitle">
+          Learn the basics of Sass in just a few minutes
+        </div>
+        <img src="image/Blog E-1.webp" id="container-img" />
+        <div class="container-maintext">
+          In today’s fast-moving world, knowing Sass is an important part of web
+          development. Today, almost all large projects use some sort of
+          preprocessor like Sass, Less, Stylus, etc. Sass is the most popular
+          and easy to use. If you learn Sass, it’s very easy to learn other
+          preprocessors.
+        </div>
+        <div class="subtitle">What Is Sass?</div>
+        <div class="container-maintext">
+          It stands for Syntantically Awesome Stylesheets. It’s a CSS
+          preprocessor. It allows us to create variables, nested rules, mixins,
+          functions, and do mathematical calculations, allowing us to write
+          next-generation CSS today. It allows us to easily manage large CSS
+          files and split them across different files. Every CSS file is a Sass
+          file. so you can take your .css file contents and put it in a Sass
+          file and it will work just fine. There are two types of syntaxes while
+          writing CSS in Sass. 1. SASS: Files with the .sass extension allows us
+          to write CSS without semicolons and without curly brackets with an
+          added indentation for CSS properties.
+        </div>
+        <img src="image/Blog E-2.webp" id="container-img" />
+        <div class="container-maintext">
+          2. SCSS: Files with the .scss extension is the CSS we normally write,
+          where each CSS declaration ends with a semicolon and each selector is
+          written in curly brackets.
+        </div>
+        <img src="image/Blog E-3.webp" id="container-img" />
+        <div class="container-maintext">
+          The choice is up to you as to which syntax to use. We will be using
+          the SCSS syntax. The great thing about Sass is that we write code in a
+          .scss file and it will be converted to a CSS file using a tool we will
+          explore later in this article. So, in the end, the browser will render
+          only CSS files. Let’s understand what Sass provides.
+        </div>
+        <div class="subtitle">Variables</div>
+        <div class="container-maintext">
+          Sass allows us to declare variables. This is one of the areas where
+          Sass shines because we can create variables for different colors or
+          font sizes and use that variable in any file. So, if we want to change
+          the color of any part of the page later, we don’t need to make changes
+          in all places where the color is used. We just change the color in the
+          variable and the change will be reflected in all the places where that
+          color is used. To declare a variable in Sass, we start the variable
+          name with a dollar sign.
+        </div>
+        <code>
+          $background-color: #ff0000;
+          <br />
+          $sm-font-size: 16px;
+          <br />
+          $lg-font-size: 20px;
+          <br />
+        </code>
+        <div class="subtitle">Comments</div>
+        <div class="container-maintext">
+          Sass provides two ways of writing comments. 1. Single-line comment:
+          double slashes //. 2.Multi-line comment: /* */. Note: Single-line
+          comments will not be added to the final compiled CSS file. Only
+          multi-line comments will be added to the final CSS. So, if you need to
+          see the comments in a CSS file, you need to write it using the /* */
+          syntax
+        </div>
+        <div class="subtitle">Nesting</div>
+        <div class="container-maintext">If you have CSS like below:</div>
+        <code>
+          footer {
+          <br />
+          background-color: #777;
+          <br />
+          }
+          <br />
+          footer ul {
+          <br />
+          list-style: none;
+          <br />
+          }
+          <br />
+          footer li {
+          <br />
+          float: left;
+          <br />
+          }
+          <br />
+          footer li a {
+          <br />
+          padding: 5px;
+          <br />
+          color: #4e4f48;
+          <br />
+          font-size: 16px;
+          <br />
+          text-decoration: none;
+          <br />
+          }
+          <br />
+        </code>
+        <div class="container-maintext">
+          We can write it using nesting like this:
+        </div>
+        <code>
+          footer {
+          <br />
+          background-color: #777;
+          <br />
+          ul {
+          <br />
+          list-style: none;
+          <br />
+          }
+          <br />
+          li {
+          <br />
+          float: left;
+          <br />
+          a {
+          <br />
+          padding: 5px;
+          <br />
+          color: #4e4f48;
+          <br />
+          font-size: 16px;
+          <br />
+          text-decoration: none;
+          <br />
+          }
+          <br />
+          }
+          <br />
+          }
+          <br />
+        </code>
+        <div class="container-maintext">
+          So, as shown in the above CSS, nesting allows us to group together
+          related code, which is easy to modify and maintain and also saves us
+          from typing extra characters.
+        </div>
+      </div>
     </div>
     <footer>
-        <div class="footer-main-container">
-          <div class="project-container">
-            Project Page
-            <div class="project-inner-container">
-              <a href="../ProjectPage/ProjectB.html">Counter</a>
-              <a href="../ProjectPage/ProjectC.html">KawaiiMonster</a>
-              <a href="../ProjectPage/ProjectD.html">MorseCode</a>
-              <a href="../ProjectPage/ProjectE.html">NameCard</a>
-            </div>
-          </div>
-          <div class="project-container">
-            Project Showcase
-            <div class="project-inner-container">
-              <a href="../ProjectShowcase/Counter/index.html">Counter</a>
-              <a href="../ProjectShowcase/KawaiiMonster/index.html">KawaiiMonster</a>
-              <a href="../ProjectShowcase/MorseCode/index.html">MorseCode</a>
-              <a href="../ProjectShowcase/NameCard/index.html">NameCard</a>
-            </div>
-          </div>
-          <div class="blog-container">
-            Blog
-            <div class="blog-inner-container">
-              <a href="../Blog/BlogB.html">How to design a modern website</a>
-              <a href="../Blog/BlogC.html">Figma vs Sketch: Why 10 Design Agencies Switched from Sketch to Figma</a>
-              <a href="../Blog/BlogD.html">CSS Flexbox Tips and Tricks</a>
-              <a href="../Blog/BlogE.html">An Introduction to Sass and SCSS</a>
-            </div>
-          </div>
-          <div class="resources-container">
-            Resources
-            <div class="resources-inner-container">
-              <a href="../contact/contact.html">Contact Us</a>
-              <a href="../our-team/our-team.html">Our Team</a>
-              <a href="../our-blog/our-blog.html">Our Blog</a>
-            </div>
-          </div>
-          <div class="admin-container">
-            Admin
-            <div class="admin-inner-container">
-              <a href="../login/login.html">Login</a>
-              <a href="../signup/signup.html">Sign Up</a>
-              <a href="../admin-page/index.html">Admin Page</a>
-            </div>
+      <div class="footer-main-container">
+        <div class="project-container">
+          Project Page
+          <div class="project-inner-container">
+            <a href="../ProjectPage/ProjectB.html">Counter</a>
+            <a href="../ProjectPage/ProjectC.html">KawaiiMonster</a>
+            <a href="../ProjectPage/ProjectD.html">MorseCode</a>
+            <a href="../ProjectPage/ProjectE.html">NameCard</a>
+            <a href="../ProjectPage/ProjectF.thml">Log-In Form</a>
           </div>
         </div>
-    
-      </footer>
-</body>
-
+        <div class="project-container">
+          Project Showcase
+          <div class="project-inner-container">
+            <a href="../ProjectShowcase/Counter/index.html">Counter</a>
+            <a href="../ProjectShowcase/KawaiiMonster/index.html">
+              KawaiiMonster
+            </a>
+            <a href="../ProjectShowcase/MorseCode/index.html">MorseCode</a>
+            <a href="../ProjectShowcase/NameCard/index.html">NameCard</a>
+            <a href="../ProjectShowcase/log-in-form/index.html">log-in Form</a>
+          </div>
+        </div>
+        <div class="blog-container">
+          Blog
+          <div class="blog-inner-container">
+            <a href="../Blog/BlogB.html">How to design a modern website</a>
+            <a href="../Blog/BlogC.html">
+              Figma vs Sketch: Why 10 Design Agencies Switched from Sketch to
+              Figma
+            </a>
+            <a href="../Blog/BlogD.html">CSS Flexbox Tips and Tricks</a>
+            <a href="../Blog/BlogE.html">An Introduction to Sass and SCSS</a>
+          </div>
+        </div>
+        <div class="resources-container">
+          Resources
+          <div class="resources-inner-container">
+            <a href="../contact/contact.html">Contact Us</a>
+            <a href="../our-team/our-team.html">Our Team</a>
+            <a href="../our-blog/our-blog.html">Our Blog</a>
+          </div>
+        </div>
+        <div class="admin-container">
+          Admin
+          <div class="admin-inner-container">
+            <a href="../login/login.html">Login</a>
+            <a href="../signup/signup.html">Sign Up</a>
+            <a href="../admin-page/index.html">Admin Page</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
